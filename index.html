@@ -8,10 +8,58 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./index.scss" />
+    <link rel="stylesheet" href="./styles/index.css" />
   </head>
-
   <body>
-    <img src="images/icons/logo-white.svg" alt="Greenthumb" />
+    <header>
+      <div class="header">
+        <img class="mobile-leaves "src="images/hero/mobile/mobile-leaves.png"/>
+        <img class="left-img" src="images/hero/desktop/left-leaves.png"/>
+        <img class="center-img" src="images/hero/desktop/plantperson.png"/>
+        <img class="mobile-person" src="images/hero/mobile/mobile-plantperson.png"/>
+        <img class="right-img" src="images/hero/desktop/right-leaves.png"/>
+        <img class="green-thumb" src="images/icons/logo-white.svg" alt="Greenthumb" />
+        <div class="text">Find your next green friend</div>
+        <img class="arrow-down" src="images/icons/arrow-down.svg"/>
+      </div>
+    </header>
+    <section class="container">
+      <div class="card">
+        <img src="images/illustrations/sun.png" alt="Imagem do card">
+        <p><b>1.</b> Set the amount of <b>sunlight</b> your plant will get.</p>
+        <select id="sun" name="select" class="select">
+          <option>Selecione...</option>
+          <option value="high">High</option>
+          <option value="low">Low</option>
+          <option value="no">No</option>
+        </select>
+      </div>
+      <div class="card">
+        <img src="images/illustrations/wateringcan.png" alt="Imagem do card" class="wateringcan">
+        <p><b>2.</b> How often do you want to <b>water</b> your plant?</p>
+        <select id="water" name="select" class="select">
+          <option>Selecione...</option>
+          <option value="rarely">Rarely</option>
+          <option value="regularly">Regularly</option>
+          <option value="daily">Daily</option>
+        </select>
+      </div>
+        <div class="card">
+          <img src="images/illustrations/dog.png" alt="Imagem do card">
+          <p><b>3.</b> Do you have pets? Do they <b>chew</b> plants? </p>
+          <select name="select" class="select"id="toxicity">
+            <option>Selecione...</option>
+            <option value="true">True</option>
+            <option value="false">False</option>
+          </select>
+        </div>
+      </div>
+      <div id="image-container"></div>
+    </section>
+    <div id="product-container" class="product-container">
+      <div id="resultado" class="resultado"></div>
+    </div>
+    <script src="index.js"></script>
   </body>
 </html>
+
